@@ -1,0 +1,12 @@
+<script type="module">
+import * as test from './__target__/main.js'; 
+window.test = test;
+</script>
+<h2>Hello demo</h2>
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<script>
+setInterval(function(){ 
+    console.log("Run"); 
+    test.run();
+}, 100);
+</script>
